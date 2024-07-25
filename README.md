@@ -1,6 +1,10 @@
 For the creation I used an Arduino Mega 2560 board because it has many output pins and is better suited to driving this type of display.
 This panel measures 192 by 96. millimetrs and it already has all the drivers on board to drive the LEDs.
+
 I used the Adafruit_GFX.h RGBmatrixPanel.h libraries and changed the character fonts to better fit the display.
+REMEMBER TO COPY the Fonts "Ch_12x9.h" and "Ch_5x7.h" in in the folder: \Adafruit_GFX_Library\Fonts of your PC because the fonts I tried, does not fit perfectly.
+To edit the fonts you can use the "Adafruit GFX Pixel font customiser" (link):
+https://tchapi.github.io/Adafruit-GFX-Font-Customiser/
 
 To receive the satellite signal I used a GPS module from Ublox and the model is the Neo-6M which uses a small antenna and communicates with the card via serial at 9600 baud.
 
