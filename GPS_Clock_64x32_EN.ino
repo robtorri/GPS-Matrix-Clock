@@ -57,9 +57,12 @@ void setup(void) {
   pinMode(5, INPUT_PULLUP);
   pinMode(6, INPUT_PULLUP);
   col_red = EEPROM.read(0);
+  delay(50);
   col_green = EEPROM.read(1);
+  delay(50);
   col_blue = EEPROM.read(2);
-  if (col_red + col_green + col_blue == 0) {
+  delay(50);
+  if (col_red + col_green + col_blue == 0 || col_red + col_green + col_blue > 21) {
     col_blue = 7;
   }
   Serial1.begin(9600);  // TX  module GPS goes to 19  Mega2560 board - RX  module goes to 18 Mega2560 board
